@@ -4,7 +4,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "DigitalReefSDK",
+    name: "DRSDKINSPM",
+    platforms: [.iOS(.v12)],
     products: [
         .library(
             name: "DigitalReefSDK",
