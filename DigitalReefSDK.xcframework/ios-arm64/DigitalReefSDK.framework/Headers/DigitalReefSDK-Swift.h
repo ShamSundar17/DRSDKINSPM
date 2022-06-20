@@ -234,6 +234,14 @@ SWIFT_CLASS("_TtC14DigitalReefSDK18AdAnalyticsManager")
 - (void)gifCompletedAdAnalyticsWithAdId:(NSString * _Nonnull)adId campaignId:(NSString * _Nonnull)campaignId;
 @end
 
+
+SWIFT_CLASS("_TtC14DigitalReefSDK8AdEvents")
+@interface AdEvents : NSObject
+- (nonnull instancetype)initWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIActivityIndicatorView;
 @class NSBundle;
 @class NSCoder;
@@ -247,6 +255,14 @@ SWIFT_CLASS("_TtC14DigitalReefSDK8AdLoader")
 - (void)closeAdLoader;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC14DigitalReefSDK16ClientAttributes")
+@interface ClientAttributes : NSObject
+- (nonnull instancetype)initWithPHONE_NUMBER:(NSString * _Nullable)PHONE_NUMBER CARRIER:(NSString * _Nullable)CARRIER BILL_TYPE:(NSString * _Nullable)BILL_TYPE OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -273,6 +289,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DRNotificati
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)logToSDKWithMsg:(NSString * _Nonnull)msg;
+- (void)removeAdFromDBWithAdId:(NSString * _Nonnull)adId campaignId:(NSString * _Nonnull)campaignId;
+- (BOOL)addAdtoDBWithAdSourceType:(NSString * _Nonnull)adSourceType SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getOptInType SWIFT_WARN_UNUSED_RESULT;
 - (void)closeLoader;
 @end
 
@@ -314,6 +333,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DigitalReef 
 - (void)logsConsoleData;
 - (void)realmDb;
 - (void)requestAppTrackingTransparencyPermission;
+- (void)setClientAttributesWithAttributes:(ClientAttributes * _Nonnull)attributes;
 @end
 
 @class NSData;

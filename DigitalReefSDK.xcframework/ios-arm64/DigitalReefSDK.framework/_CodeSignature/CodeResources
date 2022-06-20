@@ -10,11 +10,11 @@
 		</data>
 		<key>AdsBaseViewController.nib/objects-14.0+.nib</key>
 		<data>
-		Lc4clix1kxfkXQ9M1rijJwtCvi4=
+		vrqaVFNEDM7f2Z+V923NSL5DkhQ=
 		</data>
 		<key>AdsBaseViewController.nib/runtime.nib</key>
 		<data>
-		vui6aKsGOC79itX/pyrAzfy6+mk=
+		gVGsNssmtjEB2fw+ns75MPBIK6Q=
 		</data>
 		<key>Assets.car</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/DigitalReefSDK-Swift.h</key>
 		<data>
-		IW9Az/17ldjI45w/hgrr6rN9vhk=
+		PWpIkzbhaQIFJ1h+pkO4mpyW2eQ=
 		</data>
 		<key>Headers/DigitalReefSDK.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/PushNotificationDR.h</key>
 		<data>
-		QOK8JAwmkFuL2KPiwfMqgqJEot0=
+		5GiaN5YHRLe2gNZ/7FIenq/+2dg=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Modules/DigitalReefSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		q85H18MYRIa5YyUcND8LjVi2OqY=
+		dOiLsD6u0VdH/i9Lci2f+LFVjp0=
 		</data>
 		<key>Modules/DigitalReefSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GCAQvho6w5akadehceChkNPilS4=
+		/VrbVEwroqOsVVBZSXEIIMQJ1Vc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,14 +110,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v1OQb6Ovvg3Kug9KR84AaZVMl8h9+IN8H0P0ktsHZMs=
+			eqZvwlQY/3kdMqz40kcq0NZp1GIl5qn1lpUa+Ewc9Vs=
 			</data>
 		</dict>
 		<key>AdsBaseViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z8z+GxC94bgjw5B6QsDiyv6M3v2sUCXOgp+WE2h+THI=
+			UxHVHJdhRrhXaukxwm7beq1sAAqZbBdMbuncGpn44sY=
 			</data>
 		</dict>
 		<key>Assets.car</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E6PsXZYE9Wi/R1yslb+froasKZAGCqdlTrAsaEMtvh0=
+			iK97eUsM0/JOhzSgRkkWAKN4Sq11xl9vEx+ocwh5BqU=
 			</data>
 		</dict>
 		<key>Headers/DigitalReefSDK.h</key>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			miEEFJKUdADkO0lUg3j/E3VRl9/D8RsIz56+1rZZQSY=
+			iO647mdawMNDQaCafhvuZOG0STJYcd7C6evCtctn3lc=
 			</data>
 		</dict>
 		<key>Modules/DigitalReefSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -229,14 +229,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OnaxCbmoqHM8bt0gkljdpsiqWCutnbq8QJIPb8tz1bM=
+			anQ41BptqLRrnlzUFF5iMKoQY3hXqmja0zKMaAL9TNc=
 			</data>
 		</dict>
 		<key>Modules/DigitalReefSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FgOg9tY9dkN6lafh+DqTaVHZzSVOf9t2L0lSh8nmdSU=
+			+kFnSHfbKrUuz+y8AkuU3xbrsqg/ceSmm21S8zP2YEU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

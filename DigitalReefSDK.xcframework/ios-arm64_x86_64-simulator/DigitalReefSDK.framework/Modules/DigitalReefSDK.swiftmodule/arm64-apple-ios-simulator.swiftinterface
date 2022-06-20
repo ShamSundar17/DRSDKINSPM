@@ -37,6 +37,7 @@ import zlib
   @objc public func logsConsoleData()
   @objc public func realmDb()
   @objc public func requestAppTrackingTransparencyPermission()
+  @objc public func setClientAttributes(attributes: DigitalReefSDK.ClientAttributes)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class InAPPUIButton : UIKit.UIButton {
@@ -132,6 +133,16 @@ public typealias InAppMessageData = [Swift.AnyHashable : Any]
   final public func closeEngagementAd()
   @objc deinit
 }
+@objc @objcMembers public class ClientAttributes : ObjectiveC.NSObject, Swift.Codable {
+  @objc public init(PHONE_NUMBER: Swift.String? = nil, CARRIER: Swift.String? = nil, BILL_TYPE: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @objcMembers public class AdEvents : ObjectiveC.NSObject {
+  @objc public init(key: Swift.String, value: Any)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GzManager : ObjectiveC.NSObject {
   @objc public static let shared: DigitalReefSDK.GzManager
   @objc public func gzipped(dataToBeCompressed: Foundation.Data)
@@ -153,6 +164,9 @@ public struct InAppContent : Swift.Codable {
   @objc public var engagementPushClicked: Swift.Bool
   @objc public var engagementInAppOpened: Swift.Bool
   @objc public func logToSDK(msg: Swift.String)
+  @objc public func removeAdFromDB(adId: Swift.String, campaignId: Swift.String)
+  @objc public func addAdtoDB(adSourceType: Swift.String) -> Swift.Bool
+  @objc public func getOptInType() -> Swift.String
   public func showInAppMessages()
   public func updateOnlyInAppAdShownInDB(_ id: Swift.String)
   public func checkInAppAdExists(_ id: Swift.String) -> Swift.Bool
