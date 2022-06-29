@@ -35,7 +35,8 @@ BOOL injectSelector(Class newClass, SEL newSel, Class addToClass, SEL makeLikeSe
 +(void) callHandleResponse:(UNNotificationResponse *)response;
 +(void) setNotificationDataWithRequest:(UNNotificationRequest *)request adInfo:(NSDictionary *)adsInfo mutableContent:(UNMutableNotificationContent *)bestAttemptContent contentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler;
 +(BOOL) showAdAndStoreInDB:(NSDictionary *) userInfo;
-+(void) removeAllDeliveredPushNotifications;
++ (void) removeAllDeliveredPushNotifications;
++ (void) removeAllDeliveredPushNotifications:(int)optInValue;
 + (void) removeTPDeliveredPushNotifications;
 + (void) removeAllDeliveredAPNSNotifications;
 +(NSDictionary *) getAd:(NSDictionary *) userInfo;

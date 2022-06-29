@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/DigitalReefSDK-Swift.h</key>
 		<data>
-		PWpIkzbhaQIFJ1h+pkO4mpyW2eQ=
+		gs/KEvhO557TKqCfpse9nVu/ZtE=
 		</data>
 		<key>Headers/DigitalReefSDK.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/PushNotificationDR.h</key>
 		<data>
-		5GiaN5YHRLe2gNZ/7FIenq/+2dg=
+		B5EySptkdyfYYq5FNtrloAqdnlA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Modules/DigitalReefSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		dOiLsD6u0VdH/i9Lci2f+LFVjp0=
+		oepnV0jLpEb5gLtB1F7h5dzMDYY=
 		</data>
 		<key>Modules/DigitalReefSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/VrbVEwroqOsVVBZSXEIIMQJ1Vc=
+		j5zilYKjvXyR6QMUlP6XCwWMDKE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iK97eUsM0/JOhzSgRkkWAKN4Sq11xl9vEx+ocwh5BqU=
+			abhHwveKhfH3tV9/0oR8EXAi1okn3nEFrqiUucnw6EU=
 			</data>
 		</dict>
 		<key>Headers/DigitalReefSDK.h</key>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iO647mdawMNDQaCafhvuZOG0STJYcd7C6evCtctn3lc=
+			OBPNChn6WCF7Kh+KWaAe7M/fpQbgO6BQAzz1oIC9qYg=
 			</data>
 		</dict>
 		<key>Modules/DigitalReefSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -229,14 +229,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			anQ41BptqLRrnlzUFF5iMKoQY3hXqmja0zKMaAL9TNc=
+			27UMiJyD5D8THYSI5ZL+SIAOC9WQM4Z17Es+uRsJl24=
 			</data>
 		</dict>
 		<key>Modules/DigitalReefSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+kFnSHfbKrUuz+y8AkuU3xbrsqg/ceSmm21S8zP2YEU=
+			J9tftponH6BAyKo+jHtK5vc+iQ4SzpLoxq/nSUc4dg0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

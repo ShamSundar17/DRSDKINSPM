@@ -232,6 +232,7 @@ SWIFT_CLASS("_TtC14DigitalReefSDK18AdAnalyticsManager")
 - (void)adContentErrorAdAnalyticsWithAdId:(NSString * _Nonnull)adId campaignId:(NSString * _Nonnull)campaignId;
 - (void)gifDisplayedAdAnalyticsWithAdId:(NSString * _Nonnull)adId campaignId:(NSString * _Nonnull)campaignId;
 - (void)gifCompletedAdAnalyticsWithAdId:(NSString * _Nonnull)adId campaignId:(NSString * _Nonnull)campaignId;
+- (void)notificationClearedAdAnalyticsWithAdId:(NSString * _Nonnull)adId campaignId:(NSString * _Nonnull)campaignId;
 @end
 
 
@@ -288,9 +289,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DRNotificati
 @property (nonatomic) BOOL engagementInAppOpened;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (BOOL)getEngagementAdOptInStatus SWIFT_WARN_UNUSED_RESULT;
 - (void)logToSDKWithMsg:(NSString * _Nonnull)msg;
 - (void)removeAdFromDBWithAdId:(NSString * _Nonnull)adId campaignId:(NSString * _Nonnull)campaignId;
-- (BOOL)addAdtoDBWithAdSourceType:(NSString * _Nonnull)adSourceType SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)addAdtoDBWithAdSourceType:(NSString * _Nonnull)adSourceType purposeType:(NSString * _Nonnull)purposeType SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getOptInType SWIFT_WARN_UNUSED_RESULT;
 - (void)closeLoader;
 @end
@@ -334,6 +336,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DigitalReef 
 - (void)realmDb;
 - (void)requestAppTrackingTransparencyPermission;
 - (void)setClientAttributesWithAttributes:(ClientAttributes * _Nonnull)attributes;
+- (void)OptInToEngagementAdsWithOptIn:(BOOL)optIn;
+- (BOOL)getEngagementAdsOptInStatus SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSData;
@@ -384,6 +388,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) InAppMessage
 - (int32_t)countMessagesViewedInThisSessionByCategoryWithCategory:(NSString * _Nonnull)category sessionId:(NSString * _Nonnull)sessionId SWIFT_WARN_UNUSED_RESULT;
 - (int32_t)countMessagesViewedInThisSessionByMessageWithMessageId:(NSString * _Nonnull)messageId sessionId:(NSString * _Nonnull)sessionId SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC14DigitalReefSDK9InitialAd")
+@interface InitialAd : NSObject
+@property (nonatomic, copy) NSString * _Nonnull adId;
+@property (nonatomic, copy) NSString * _Nonnull campaignId;
+- (nonnull instancetype)initWithAdId:(NSString * _Nonnull)adId campaignId:(NSString * _Nonnull)campaignId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

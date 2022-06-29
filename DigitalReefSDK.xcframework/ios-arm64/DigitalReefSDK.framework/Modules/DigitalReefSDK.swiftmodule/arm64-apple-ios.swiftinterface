@@ -38,6 +38,8 @@ import zlib
   @objc public func realmDb()
   @objc public func requestAppTrackingTransparencyPermission()
   @objc public func setClientAttributes(attributes: DigitalReefSDK.ClientAttributes)
+  @objc public func OptInToEngagementAds(optIn: Swift.Bool)
+  @objc public func getEngagementAdsOptInStatus() -> Swift.Bool
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class InAPPUIButton : UIKit.UIButton {
@@ -46,6 +48,12 @@ import zlib
   @objc @_Concurrency.MainActor(unsafe) public var ctaType: Swift.String?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @objcMembers public class InitialAd : ObjectiveC.NSObject {
+  @objc public var adId: Swift.String
+  @objc public var campaignId: Swift.String
+  @objc public init(adId: Swift.String, campaignId: Swift.String)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class InAppMessageService : ObjectiveC.NSObject {
@@ -79,6 +87,7 @@ import zlib
   @objc public func adContentErrorAdAnalytics(adId: Swift.String, campaignId: Swift.String)
   @objc public func gifDisplayedAdAnalytics(adId: Swift.String, campaignId: Swift.String)
   @objc public func gifCompletedAdAnalytics(adId: Swift.String, campaignId: Swift.String)
+  @objc public func notificationClearedAdAnalytics(adId: Swift.String, campaignId: Swift.String)
   @objc deinit
 }
 public struct CompressionLevel : Swift.RawRepresentable {
@@ -163,9 +172,10 @@ public struct InAppContent : Swift.Codable {
   @objc public static let shared: DigitalReefSDK.DRNotificationHandler
   @objc public var engagementPushClicked: Swift.Bool
   @objc public var engagementInAppOpened: Swift.Bool
+  @objc public func getEngagementAdOptInStatus() -> Swift.Bool
   @objc public func logToSDK(msg: Swift.String)
   @objc public func removeAdFromDB(adId: Swift.String, campaignId: Swift.String)
-  @objc public func addAdtoDB(adSourceType: Swift.String) -> Swift.Bool
+  @objc public func addAdtoDB(adSourceType: Swift.String, purposeType: Swift.String) -> Swift.Bool
   @objc public func getOptInType() -> Swift.String
   public func showInAppMessages()
   public func updateOnlyInAppAdShownInDB(_ id: Swift.String)
